@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill"
+    android:orientation="vertical"
+    tools:context="com.example.ramonsl.shwoviews.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/idlitrao"
+            android:layout_width="162dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:accessibilityHeading="true"
+            android:src="@mipmap/ic_litrao" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtlitrao"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="1"
+                    android:gravity="fill"
+                    android:text=" Litrao de Cerveja"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idrslitrao"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:scrollHorizontally="false"
+                        android:text="R$"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edprecolitrao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Preço"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/idgarrafa"
+            android:layout_width="162dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:accessibilityHeading="true"
+            android:src="@mipmap/ic_garrafa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtgarrafa"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="1"
+                    android:gravity="fill"
+                    android:text=" 600 ml de Cerveja"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idrsgarrafa"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:scrollHorizontally="false"
+                        android:text="R$"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edprecogarrafa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Preço"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:orientation="horizontal"
+
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/idlong"
+            android:layout_width="162dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_long" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtlong"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="1"
+                    android:gravity="fill"
+                    android:text=" 355 ml de Cerveja"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idrslong"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:scrollHorizontally="false"
+                        android:text="R$"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edprecolong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Preço"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:orientation="horizontal"
+
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/idlata"
+            android:layout_width="162dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_lata" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtlata"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=" 350 ml de Cerveja"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="284dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idrslata"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:scrollHorizontally="false"
+                        android:text="R$"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edprecolata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Preço"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btcalc"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Calcular" />
+    </LinearLayout>
+
+
+</LinearLayout>
