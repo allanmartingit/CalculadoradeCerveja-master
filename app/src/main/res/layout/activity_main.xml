@@ -69,6 +69,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Preço"
+                        android:contentDescription="Clique aqui para inserir o valor da cerveja litrão"
                         android:inputType="number" />
 
                 </LinearLayout>
@@ -141,6 +142,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Preço"
+                        android:contentDescription="Clique aqui para inserir o valor da cerveja de garrafa"
                         android:inputType="number" />
 
                 </LinearLayout>
@@ -212,6 +214,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Preço"
+                        android:contentDescription="Clique aqui para inserir o valor da long neck de cerveja"
                         android:inputType="number" />
 
                 </LinearLayout>
@@ -283,6 +286,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Preço"
+                        android:contentDescription="Clique aqui para inserir o valor da lata de cerveja "
                         android:inputType="number" />
 
                 </LinearLayout>
@@ -308,6 +312,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:contentDescription="Clique aqui para calcular a melhor cerveja"
             android:text="Calcular" />
     </LinearLayout>
 

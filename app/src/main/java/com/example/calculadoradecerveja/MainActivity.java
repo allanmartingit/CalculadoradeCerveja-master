@@ -11,11 +11,11 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    private EditText ed1;
-    private EditText ed2;
-    private EditText ed3;
-    private EditText ed4;
-    private Button bt1;
+     EditText ed1;
+     EditText ed2;
+     EditText ed3;
+     EditText ed4;
+     Button bt1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,15 +29,13 @@ public class MainActivity extends AppCompatActivity {
         bt1 = findViewById(R.id.btcalc);
 
         bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View view) {
-                //if (ed1.length() != 0 || ed2.length() != 0 || ed3.length() != 0 || ed4.length() != 0) {
-                //    Toast.makeText(MainActivity.this, "O campo esta vazio", Toast.LENGTH_LONG).show();
-                //}
-                //while (ed1.getText().toString().trim().equals("") && ed2.getText().toString().trim().equals("")){
-                //else {
-                    double garrafa1valor = Integer.parseInt(ed1.getText().toString());
-                    double garrafa2valor = Integer.parseInt(ed2.getText().toString());
+                if ((ed1.length() == 0 )|| (ed2.length() == 0) || (ed3.length() == 0) || (ed4.length() == 0)) {
+                 Toast.makeText(MainActivity.this, "O campo esta vazio", Toast.LENGTH_LONG).show();
+                }else {
+                    double garrafa1valor = Double.parseDouble(ed1.getText().toString());
+                    double garrafa2valor =  Double.parseDouble(ed2.getText().toString());
                     double garrafa3valor = Integer.parseInt(ed3.getText().toString());
                     double garrafa4valor = Integer.parseInt(ed4.getText().toString());
                     int respostafinal = 0, garrafa600ml = 600, garrafa355ml = 355, garrafa350ml = 350, litro = 1000;
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     Toast.makeText(MainActivity.this, "A cerveja mais barata é: " + txtfinal, Toast.LENGTH_LONG).show();
-                //}
+                }
 
             }
         });
